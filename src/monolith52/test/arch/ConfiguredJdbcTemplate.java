@@ -1,4 +1,4 @@
-package monolith52.test.model;
+package monolith52.test.arch;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;

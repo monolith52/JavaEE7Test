@@ -6,5 +6,9 @@
 </head>
 <body>
 this is dynamic contents
+<div th:each="book,stat : ${books}">
+<div><p th:text="${book.title}">book title</p></div>
+</div>
+done
 </body>
 </html>
