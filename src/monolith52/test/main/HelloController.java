@@ -27,6 +27,12 @@ public class HelloController {
 	@Context private HttpServletRequest request;
 	
 	@GET
+	@Path("")
+	public Viewable get() {
+		return get(1);
+	}
+	
+	@GET
 	@Path("page:{page}")
 	public Viewable get(@PathParam("page") Integer page) {
 		if (page < 1) page = 1;
